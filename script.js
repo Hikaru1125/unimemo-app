@@ -1,6 +1,6 @@
 let descriptions = {};
 
-fetch("data.json")
+fetch("data.json", { cache: "no-store" })
   .then(res => res.json())
   .then(data => {
     descriptions = data;
