@@ -12,9 +12,9 @@ function searchNumber() {
   const item = descriptions[input];
 
   if (item) {
-    document.getElementById("title").textContent = `番号 ${input}`;
+    document.getElementById("title").textContent = `No. ${input}`;
     const img = document.getElementById("image");
-    img.src = `images/${input}.png`;
+    img.src = `images/${input}.png`; // N.png 形式に修正
     img.onerror = function() {
       img.onerror = null;
       img.src = "images/noimage.png";
